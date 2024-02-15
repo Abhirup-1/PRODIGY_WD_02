@@ -1,0 +1,83 @@
+body{
+    background: rgb(97, 203, 222);
+}
+
+.outer_box{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    min-width: 500px;
+    min-height: 500px;
+    padding: 50 0;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 50px 10px 50px ;
+}
+
+.inner_box{
+    position: absolute;
+    top: 150px;
+    width: 65%;
+    left: 12%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(230, 207, 167);
+    background: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgb(97, 203, 222);
+}
+
+.buttons{
+    position: absolute;
+    top: 260px;
+    left: 25px;
+    width: 90%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button{
+    width: 100px;
+    height: 30px;
+    background-color: blueviolet;
+    color: beige;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.buttons button:hover {
+    box-shadow: 10px 3px 15px rgba(0,0,0,0.5);
+}
+
+.buttons button:nth-last-child(1){
+    background-color: rgb(238, 47, 47);
+    transition: 0.3s ease;
+    
+}
+
+.buttons button:nth-last-child(2){
+    background-color: rgb(231, 231, 14);
+    color: black;
+    transition: 0.3s ease;
+}
+
+.buttons button:nth-last-child(3){
+    background-color: darkgreen;
+    transition: 0.3 ease;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(4, 48, 62);
+      transition: ease-in;
+    }
+}
